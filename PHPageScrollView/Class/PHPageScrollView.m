@@ -214,7 +214,8 @@
 
 - (float)leftRightOffset
 {
-    return (self.frame.size.width - _cellSize.width)/2;
+    float wid = [[UIScreen mainScreen] bounds].size.width;
+    return (wid - _cellSize.width)/2;
 }
 
 #pragma mark - Action
